@@ -1,0 +1,50 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="api.test">
+
+    <insert id="test" parameterType="api.model.APIVO">
+
+        INSERT INTO API_TEST
+        (
+            movieCd
+            , movieNm
+            , movieNmEn
+            , prdtYear
+            , openDt
+            , typeNm
+            , prdtStatNm
+            , nationAlt
+            , genreAlt
+            , repNationNm
+            , repGenreNm
+            , directors
+            , peopleNm
+            , companys
+            , companyCd
+            , companyNm
+        )
+        VALUES
+        (
+            #{movieCd, jdbcType=VARCHAR}
+            , #{movieNm, jdbcType=VARCHAR}
+            , #{movieNmEn, jdbcType=VARCHAR}
+            , #{prdtYear, jdbcType=VARCHAR}
+            , #{openDt, jdbcType=VARCHAR}
+            , #{typeNm, jdbcType=VARCHAR}
+            , #{prdtStatNm, jdbcType=VARCHAR}
+            , #{nationAlt, jdbcType=VARCHAR}
+            , #{genreAlt, jdbcType=VARCHAR}
+            , #{repNationNm, jdbcType=VARCHAR}
+            , #{repGenreNm, jdbcType=VARCHAR}
+            , #{directors, jdbcType=VARCHAR}
+            , #{peopleNm, jdbcType=VARCHAR}
+            , #{companys, jdbcType=VARCHAR}
+            , #{companyCd, jdbcType=VARCHAR}
+            , #{companyNm, jdbcType=VARCHAR}
+        )
+
+
+    </insert>
+
+</mapper>
